@@ -6957,12 +6957,12 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "readRHT03" "', argument " "2"" of type '" "int *""'");
   }
-  arg2 = (int *)(val2);
+  arg2 = (int *)(argp2);
   ecode3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_int, 0 |  0 );
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "readRHT03" "', argument " "3"" of type '" "int *""'");
   }
-  arg3 = (int *)(val3);
+  arg3 = (int *)(argp3);
 
   result = (int)readRHT03(arg1, arg2, arg3);
   resultobj = SWIG_From_int((int)(result));
