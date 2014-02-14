@@ -6902,7 +6902,7 @@ fail:
 SWIGINTERN PyObject *_wrap_maxDetectRead(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   int arg1 ;
-  int arg2 ;
+  unsigned char arg2[4] ;
   int val1 ;
   int ecode1 = 0 ;
   int val2 ;
@@ -6916,12 +6916,50 @@ SWIGINTERN PyObject *_wrap_maxDetectRead(PyObject *SWIGUNUSEDPARM(self), PyObjec
     SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "maxDetectRead" "', argument " "1"" of type '" "int""'");
   }
   arg1 = (int)(val1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  ecode2 = SWIG_AsVal_unsigned_SS_char((obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "maxDetectRead" "', argument " "2"" of type '" "unsigned char buffer [4]""'");
   }
-  arg2 = (int)(val2);
+  arg2 = (unsigned char)(val2);
   maxDetectRead(arg1,arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
+SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  int arg1 ;
+  int *arg2 = (int *) 0 ;
+  int *arg3 = (int *) 0 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  int val2 ;
+  int *ecode2 = 0 ;
+  int val3 ;
+  int *ecode3 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+
+  if (!PyArg_ParseTuple(args,(char *)"OOO:readRHT03",&obj0,&obj1,&obj2)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "readRHT03" "', argument " "1"" of type '" "int""'");
+  }
+  arg1 = (int)(val1);
+  ecode2 = SWIG_ConvertPtr(obj1, &argp2,SWIGTYPE_p_int, 0 |  0 );
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "readRHT03" "', argument " "2"" of type '" "int""'");
+  }
+  arg2 = (int *)(val2);
+  ecode3 = SWIG_ConvertPtr(obj2, &argp3,SWIGTYPE_p_int, 0 |  0 );
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "readRHT03" "', argument " "3"" of type '" "int""'");
+  }
+  arg3 = (int *)(val3);
+  readRHT03(arg1,arg2,arg3);
   resultobj = SWIG_Py_Void();
   return resultobj;
 fail:
@@ -7044,6 +7082,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"piGlowRing", _wrap_piGlowRing, METH_VARARGS, NULL},
 	 { (char *)"piGlowSetup", _wrap_piGlowSetup, METH_VARARGS, NULL},
 	 { (char *)"maxDetectRead", _wrap_maxDetectRead, METH_VARARGS, NULL},
+	 { (char *)"readRHT03", _wrap_readRHT03, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
