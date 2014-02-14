@@ -6899,6 +6899,35 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_maxDetectRead(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  int arg1 ;
+  int arg2 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+
+  if (!PyArg_ParseTuple(args,(char *)"OO:maxDetectRead",&obj0,&obj1)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "maxDetectRead" "', argument " "1"" of type '" "int""'");
+  }
+  arg1 = (int)(val1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "maxDetectRead" "', argument " "2"" of type '" "unsigned char buffer [4]""'");
+  }
+  arg2 = (int)(val2);
+  maxDetectRead(arg1,arg2);
+  resultobj = SWIG_Py_Void();
+  return resultobj;
+fail:
+  return NULL;
+}
+
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"wiringPiSetup", _wrap_wiringPiSetup, METH_VARARGS, NULL},
@@ -7014,6 +7043,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"piGlowLeg", _wrap_piGlowLeg, METH_VARARGS, NULL},
 	 { (char *)"piGlowRing", _wrap_piGlowRing, METH_VARARGS, NULL},
 	 { (char *)"piGlowSetup", _wrap_piGlowSetup, METH_VARARGS, NULL},
+	 { (char *)"maxDetectRead", _wrap_maxDetectRead, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
