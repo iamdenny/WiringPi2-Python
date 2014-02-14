@@ -6936,9 +6936,9 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
   int val1 ;
   int ecode1 = 0 ;
   int val2 ;
-  int *ecode2 = 0 ;
+  int ecode2 = 0 ;
   int val3 ;
-  int *ecode3 = 0 ;
+  int ecode3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
@@ -6963,7 +6963,7 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
   }
   arg3 = (int *)(val3);
 
-  result = (int)readRHT03(arg1,arg2,arg3);
+  result = (int)readRHT03(arg1,*arg2,*arg3);
   resultobj = SWIG_From_int((int)(result));
   return resultobj;
 fail:
