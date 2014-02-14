@@ -6916,7 +6916,7 @@ SWIGINTERN PyObject *_wrap_maxDetectRead(PyObject *SWIGUNUSEDPARM(self), PyObjec
     SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "maxDetectRead" "', argument " "1"" of type '" "int""'");
   }
   arg1 = (int)(val1);
-  ecode2 = SWIG_AsVal_unsigned_SS_char((obj1, &val2);
+  ecode2 = SWIG_AsVal_unsigned_SS_char(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "maxDetectRead" "', argument " "2"" of type '" "unsigned char buffer [4]""'");
   }
