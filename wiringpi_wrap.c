@@ -6944,8 +6944,8 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
 
-//  void *argp2 = 0;
-//  void *argp3 = 0;
+  void *argp2 = 0;
+  void *argp3 = 0;
 
   if (!PyArg_ParseTuple(args,(char *)"OOO:readRHT03",&obj0,&obj1,&obj2)) SWIG_fail;
   ecode1 = SWIG_AsVal_int(obj0, &val1);
@@ -6953,18 +6953,18 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
     SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "readRHT03" "', argument " "1"" of type '" "int""'");
   }
   arg1 = (int)(val1);
-  ecode2 = SWIG_ConvertPtr(obj1, &arg2, SWIGTYPE_p_int, 0 |  0 );
+  ecode2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_int, 0 |  0 );
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "readRHT03" "', argument " "2"" of type '" "int *""'");
   }
   arg2 = (int *)(val2);
-  ecode3 = SWIG_ConvertPtr(obj2, &arg3, SWIGTYPE_p_int, 0 |  0 );
+  ecode3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_int, 0 |  0 );
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "readRHT03" "', argument " "3"" of type '" "int *""'");
   }
   arg3 = (int *)(val3);
 
-  result = (int)readRHT03(arg1, &arg2, &arg3);
+  result = (int)readRHT03(arg1, arg2, arg3);
   resultobj = SWIG_From_int((int)(result));
   return resultobj;
 fail:
