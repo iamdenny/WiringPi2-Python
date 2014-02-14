@@ -6929,6 +6929,7 @@ fail:
 //}
 
 SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  int result;
   PyObject *resultobj = 0;
   int arg1 ;
   int *arg2 = (int *) 0 ;
