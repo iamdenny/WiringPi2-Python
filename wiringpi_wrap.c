@@ -6948,7 +6948,7 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
 
   if (!PyArg_ParseTuple(args,(char *)"OOO:readRHT03",&obj0,&obj1,&obj2)) SWIG_fail;
   res1 = SWIG_AsVal_int(obj0, &val1);
-  if (!SWIG_IsOK(ecode1)) {
+  if (!SWIG_IsOK(res1)) {
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "readRHT03" "', argument " "1"" of type '" "int""'");
   }
   arg1 = (int)(val1);
