@@ -6936,9 +6936,9 @@ SWIGINTERN PyObject *_wrap_readRHT03(PyObject *SWIGUNUSEDPARM(self), PyObject *a
   int *arg3 = (int *) 0 ;
   int val1 ;
   int ecode1 = 0 ;
-  int val2 ;
+//  int val2 ;
   int ecode2 = 0 ;
-  int val3 ;
+//  int val3 ;
   int ecode3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
